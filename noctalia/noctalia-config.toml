@@ -1,0 +1,438 @@
+config_version = 13
+
+[bar]
+order = [
+    "Default",
+    "top",
+    "minimal",
+    "stelic-sys",
+    "Noctalia-v4",
+    "duel-bar-part-1",
+    "duel-bar-part-2",
+    "programming",
+    "Tech-resolve",
+    "task-bar",
+    "simple-shrinker",
+    "sane",
+    "Floater-squircle",
+    "Ultra-minimal",
+    "box-bar"
+]
+
+    [bar.Default]
+    enabled = false
+    start = [ "launcher", "workspaces" ]
+
+    [bar.Floater-squircle]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_fill = "surface"
+    capsule_foreground = "primary"
+    capsule_opacity = 0.79999998211860657
+    capsule_padding = 10.0
+    capsule_radius = 8
+    capsule_thickness = 0.84999998472630978
+    center = [
+        "cpu",
+        "temp",
+        "active_window",
+        "volume",
+        "brightness",
+        "notifications",
+        "media",
+        "audio_visualizer",
+        "workspaces",
+        "clock",
+        "date"
+    ]
+    enabled = false
+    end = []
+    margin_edge = 3
+    margin_ends = 0
+    start = []
+
+    [bar.Noctalia-v4]
+    background_opacity = 0.79999998211860657
+    center = [ "audio_visualizer", "workspaces", "audio_visualizer" ]
+    enabled = false
+    end = [
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "control-center",
+        "session"
+    ]
+    margin_edge = 5
+    margin_ends = 5
+    start = [ "launcher", "spacer_1", "media" ]
+
+    [bar.Tech-resolve]
+    background_opacity = 0.79999998211860657
+    center = [ "spacer_2", "audio_visualizer", "clock", "audio_visualizer", "spacer_1" ]
+    enabled = false
+    end = [ "tray", "clipboard", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+    margin_ends = 50
+    start = [ "launcher", "wallpaper", "workspaces", "cpu" ]
+
+    [bar.Ultra-minimal]
+    center = [ "date", "spacer_1", "clock" ]
+    color = "primary"
+    enabled = false
+    end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "session" ]
+    font_family = "JetBrainsMono NFP"
+    font_weight = 400
+    hover_highlight = false
+    icon_color = "primary"
+    margin_edge = 2
+    margin_ends = 2
+    radius = 6
+    scale = 0.90000000596046448
+    start = [ "workspaces" ]
+    thickness = 25
+
+    [bar.box-bar]
+    background_opacity = 0.89999997988343239
+    capsule = true
+    capsule_fill = "on_primary"
+    capsule_radius = 0
+    capsule_thickness = 0.69999998807907104
+    center = [ "clock", "notifications" ]
+    enabled = false
+    end = [ "tray", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+    margin_edge = 5
+    margin_ends = 5
+    padding = 5
+    radius = 0
+    start = [ "launcher", "workspaces" ]
+    thickness = 35
+
+    [bar.duel-bar-part-1]
+    background_opacity = 0.79999998211860657
+    capsule = true
+    capsule_foreground = "primary"
+    capsule_opacity = 0.79999998211860657
+    center = [ "audio_visualizer", "audio_visualizer" ]
+    color = "primary"
+    enabled = false
+    end = [
+        "weather",
+        "tray",
+        "notifications",
+        "clipboard",
+        "bluetooth",
+        "network",
+        "volume",
+        "brightness",
+        "battery",
+        "clock",
+        "session"
+    ]
+    icon_color = "primary"
+    margin_edge = 0
+    margin_ends = 50
+    start = [ "cpu", "ram", "screenshot", "active_window" ]
+
+    [bar.duel-bar-part-2]
+    background_opacity = 0.0
+    capsule = true
+    capsule_opacity = 0.79999998211860657
+    capsule_thickness = 0.84999998472630978
+    center = [ "workspaces" ]
+    enabled = false
+    end = []
+    margin_edge = 0
+    margin_ends = 0
+    panel_overlap = 0
+    position = "left"
+    reserve_space = false
+    smart_auto_hide = true
+    start = []
+    thickness = 40
+
+    [bar.minimal]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.5
+    capsule_border = "primary"
+    capsule_opacity = 0.79999998211860657
+    capsule_radius = 8
+    enabled = false
+    end = [ "brightness", "tray", "network", "bluetooth", "notifications", "clipboard", "volume", "theme_mode", "session" ]
+    margin_edge = 5
+    margin_ends = 5
+    shadow = false
+    start = [ "launcher", "workspaces" ]
+
+    [bar.programming]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_opacity = 0.79999998211860657
+    center = [ "audio_visualizer", "spacer_2", "clock", "spacer_1", "audio_visualizer" ]
+    color = "primary"
+    enabled = false
+    end = [
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "theme_mode",
+        "session"
+    ]
+    icon_color = "primary"
+    margin_ends = 0
+    start = [ "launcher", "workspaces" ]
+
+    [bar.sane]
+    background_opacity = 0.0
+    capsule = true
+    capsule_fill = "surface"
+    capsule_foreground = "primary"
+    capsule_padding = 10.0
+    capsule_radius = 20
+    capsule_thickness = 0.84999998472630978
+    center = [ "workspaces", "notifications" ]
+    concave_edge_corners = false
+    end = [ "tray", "clipboard", "network", "bluetooth", "volume", "battery", "session", "clock" ]
+    margin_edge = 2
+    margin_ends = 0
+    margin_opposite_edge = 2
+    radius = 0
+    shadow = false
+    start = [ "launcher", "media", "weather", "control-center" ]
+
+    [bar.simple-shrinker]
+    background_opacity = 0.0
+    capsule = true
+    capsule_fill = "surface"
+    capsule_foreground = "primary"
+    capsule_opacity = 0.79999998211860657
+    capsule_padding = 10.0
+    capsule_thickness = 0.89999998360872269
+    center = [ "clock", "media", "workspaces", "tray", "notifications", "clipboard", "network", "volume", "session" ]
+    enabled = false
+    end = []
+    font_weight = 600
+    margin_edge = 2
+    margin_ends = 0
+    margin_opposite_edge = 2
+    radius = 0
+    shadow = false
+    start = []
+    widget_spacing = 4
+
+    [bar.stelic-sys]
+    background_opacity = 0.79999998211860657
+    enabled = false
+    end = [
+        "screenshot",
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "session"
+    ]
+    margin_edge = 5
+    margin_ends = 5
+    start = [ "launcher", "wallpaper", "workspaces", "cpu", "ram", "audio_visualizer" ]
+
+    [bar.task-bar]
+    background_opacity = 0.79999998211860657
+    center = []
+    concave_edge_corners = false
+    enabled = false
+    end = [ "tray", "clipboard", "volume", "clock", "session" ]
+    margin_ends = 0
+    position = "bottom"
+    radius = 0
+    scale = 1.300000011920929
+    start = [ "launcher", "taskbar" ]
+    thickness = 48
+
+    [bar.top]
+    background_opacity = 0.79999998211860657
+    border = "primary"
+    border_width = 1.0
+    contact_shadow = true
+    enabled = false
+    end = [
+        "screenshot",
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "session"
+    ]
+    margin_edge = 5
+    start = [ "launcher", "workspaces", "audio_visualizer" ]
+
+[brightness]
+enable_ddcutil = true
+sync_all_monitors = true
+
+[control_center]
+hidden_tabs = [ "bluetooth" ]
+sidebar_section = "none"
+
+    [control_center.calendar]
+    show_events_card = false
+
+
+[dock]
+auto_hide = true
+background_opacity = 0.79999998211860657
+enabled = true
+icon_size = 30
+inactive_opacity = 0.99999997764825821
+inactive_scale = 1.0
+launcher_position = "start"
+pinned = [
+    "google-chrome",
+    "firefox",
+    "thunar",
+    "kitty",
+    "libreoffice-startcenter",
+    "tauonmb",
+    "qalculate-gtk",
+    "nvim",
+    "io.github.bluemancz.hyprmod"
+]
+reserve_space = false
+show_dots = true
+
+[idle]
+behavior_order = [ "screen-off", "lock", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 300.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 300.0
+
+[location]
+auto_locate = true
+
+
+[nightlight]
+enabled = true
+temperature_day = 10000
+temperature_night = 2500
+
+[notification]
+background_opacity = 0.79999998211860657
+history_retention_hours = 1
+
+
+[shell]
+corner_radius_scale = 1.5000000223517418
+font_family = "SF Pro Text"
+polkit_agent = true
+time_format = "{:%I:%M%p}"
+
+
+[widget.active_window]
+display = "text_only"
+icon_size = 20
+max_length = 120
+min_length = 0
+title_scroll = "on_hover"
+
+[widget.audio_visualizer]
+color_2 = "tertiary"
+width = 125
+
+    [widget.audio_visualizer.actions]
+    left = "panel-toggle control-center media"
+
+[widget.clipboard]
+color = "on_surface"
+
+[widget.clock]
+format = "{:%I:%M%p}"
+
+[widget.control-center]
+enabled = true
+
+[widget.launcher]
+enabled = true
+glyph = "navigation-filled"
+
+[widget.media]
+color = "primary"
+enabled = true
+hide_album_art = true
+hide_when_no_media = true
+max_length = 120
+min_length = 0
+title_scroll = "on_hover"
+
+[widget.network]
+color = "tertiary"
+
+[widget.notifications]
+color = "on_surface"
+hide_when_no_unread = true
+
+[widget.session]
+color = "error"
+
+[widget.spacer_1]
+type = "spacer"
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.taskbar]
+pinned = [ "google-chrome", "org.gnome.Nautilus" ]
+pinned_opacity = 1.0
+scale = 1.6500000000000001
+
+[widget.tray]
+detached_panel = true
+drawer = true
+
+
+
+[widget.wallhaven_2]
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.wallpaper]
+enabled = true
+
+[widget.weather]
+color = "error"
+show_condition = false
+
+[widget.workspaces]
+empty_color = "outline"
+inactive_pill_size = 1.3
+scale = 1.25
+show_labels = true
+

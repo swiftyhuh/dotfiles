@@ -342,8 +342,8 @@ auto_locate = true
 
 [nightlight]
 enabled = true
-temperature_day = 10000
-temperature_night = 2500
+temperature_day = 8000
+temperature_night = 5000
 
 [notification]
 background_opacity = 0.79999998211860657
